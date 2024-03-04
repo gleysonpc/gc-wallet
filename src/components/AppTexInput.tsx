@@ -4,7 +4,7 @@ import { StyleSheet, TextInput, View } from 'react-native';
 import { theme } from '../theme';
 
 type AppTextInputProps = {
-  iconNane: any;
+  iconNane?: any;
   placeHolder?: string;
 };
 

@@ -10,7 +10,7 @@ type HomeScreenProps = {
 
 export function HomeScreen({ navigation }: HomeScreenProps) {
   function handlePress() {
-    navigation.navigate('Auth');
+    navigation.navigate('SignIn');
   }
 
   return (
