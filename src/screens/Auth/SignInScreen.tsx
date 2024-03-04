@@ -5,7 +5,7 @@ import { styles } from './styles';
 import appIcon from '../../../assets/app_icon.png';
 import { AppButton } from '../../components/AppButton';
 import { AppTextInput } from '../../components/AppTexInput';
-import { RootStackParamList } from '../Navigation';
+import { RootStackParamList } from '../StackNavigation';
 
 type SignInScreenProps = {
   navigation: NativeStackNavigationProp<RootStackParamList, 'SignIn'>;
@@ -21,7 +21,7 @@ export function SignInScreen({ navigation: { navigate } }: SignInScreenProps) {
       <View style={styles.formBody}>
         <AppTextInput iconNane="email-outline" placeHolder="E-mail" />
         <AppTextInput iconNane="lock-outline" placeHolder="Password" />
-        <AppButton text="Sign In" icon="chevron-right" handlePress={() => navigate('Home')} />
+        <AppButton text="Sign In" icon="chevron-right" handlePress={() => navigate('Tabs')} />
       </View>
       <View style={styles.formFooter}>
         <TouchableOpacity onPress={() => navigate('ForgotPassword')}>

@@ -2,26 +2,21 @@ import type { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 import type { CompositeScreenProps } from '@react-navigation/native';
 import type { StackScreenProps } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 import { RootStackParamList } from '../StackNavigation';
 import { TabStackParamList } from '../TabsNavigation';
 
-type HomeScreenProps = CompositeScreenProps<
-  BottomTabScreenProps<TabStackParamList, 'Home'>,
+type ProfileScreenProps = CompositeScreenProps<
+  BottomTabScreenProps<TabStackParamList, 'Profile'>,
   StackScreenProps<RootStackParamList>
 >;
 
-export function HomeScreen({ navigation }: HomeScreenProps) {
-  function handlePress() {
-    navigation.navigate('SignIn');
-  }
-
+export function ProfileScreen({ navigation }: ProfileScreenProps) {
   return (
     <View style={styles.container}>
-      <Text>HOME</Text>
+      <Text>Profile</Text>
       <StatusBar style="auto" />
-      <Button title="Logout" onPress={handlePress} />
     </View>
   );
 }

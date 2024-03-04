@@ -1,5 +1,5 @@
-import { Navigation } from './src/screens/Navigation';
+import { StackNavigation } from './src/screens/StackNavigation';
 
 export default function App() {
-  return <Navigation />;
+  return <StackNavigation />;
 }

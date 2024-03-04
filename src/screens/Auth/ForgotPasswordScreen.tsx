@@ -4,7 +4,7 @@ import { SafeAreaView, Text, View, TouchableOpacity } from 'react-native';
 import { styles } from './styles';
 import { AppButton } from '../../components/AppButton';
 import { AppTextInput } from '../../components/AppTexInput';
-import { RootStackParamList } from '../Navigation';
+import { RootStackParamList } from '../StackNavigation';
 
 type ForgotPasswordScreenProps = {
   navigation: NativeStackNavigationProp<RootStackParamList, 'ForgotPassword'>;
